@@ -1,31 +1,31 @@
 {
-  "name": "random-animal-name-generator",
-  "version": "0.1.1",
-  "description": "It's a random animal name generator!",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "test": "mocha test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/adzialocha/random-animal-name-generator.git"
-  },
-  "keywords": [
-    "random",
-    "animal",
-    "name",
-    "generator"
-  ],
-  "author": "adzialocha",
-  "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/adzialocha/random-animal-name-generator/issues"
-  },
-  "homepage": "https://github.com/adzialocha/random-animal-name-generator#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^6.1.4"
-  }
+	"name": "ranimal",
+	"version": "0.1.0",
+	"description": "A random named animal generator",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"test": "ava"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/puregarlic/ranimal.git"
+	},
+	"keywords": [
+		"random",
+		"animal",
+		"name",
+		"generator"
+	],
+	"author": "Graham Barber <grahammbarber@gmail.com>",
+	"license": "UNLICENSED",
+	"bugs": {
+		"url": "https://github.com/puregarlic/ranimal/issues"
+	},
+	"homepage": "https://github.com/puregarlic/ranimal#readme",
+	"devDependencies": {
+		"ava": "^3.8.2",
+		"esbuild": "^0.3.8",
+		"prettier": "^2.0.5"
+	}
 }

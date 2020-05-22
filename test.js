@@ -1,25 +1,22 @@
-const chai = require('chai')
-const expect = require('chai').expect
+import test from 'ava'
 
-const animalNameGenerator = require('./')
+import { generateRandomName } from './index.js'
 
-describe('The animal name generator', () => {
-  it('returns two words', () => {
-    const result = animalNameGenerator()
-    expect(result).to.be.a('string')
-    expect(result.split(' ')).to.have.lengthOf(2)
-  })
+test('Returns a string', async t => {
+	const name = await generateRandomName()
 
-  it('returns an alliteration', () => {
-    const result = animalNameGenerator().split(' ')
-    const firstLetter = result[0].charAt(0).toLowerCase()
-    const secondLetter = result[1].charAt(0).toLowerCase()
-    expect(firstLetter).to.equal(secondLetter)
-  })
+	t.is(typeof name, 'string')
+})
 
-  it('returns a word with a first capital letter', () => {
-    const result = animalNameGenerator()
-    const firstLetter = result[0].charAt(0)
-    expect(firstLetter).to.equal(firstLetter.toUpperCase())
-  })
+test('Returns two space-separated words', async t => {
+	const name = await generateRandomName()
+
+	t.is(name.split(' ').length, 2)
+})
+
+test('Returns alliterated words', async t => {
+	const name = await generateRandomName()
+	const [adjective, animal] = name.split(' ')
+
+	t.is(adjective[0], animal[0])
 })
