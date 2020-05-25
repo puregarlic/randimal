@@ -3,7 +3,7 @@ function getRandomWord(wordCollection) {
 }
 
 export async function generateRandomName() {
-	const [adjectives, animals] = await Promise.all([
+	const [{ default: adjectives }, { default: animals }] = await Promise.all([
 		import('./data/adjectives.js'),
 		import('./data/animals.js')
 	])
