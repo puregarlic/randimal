@@ -1,5 +1,5 @@
 {
-	"name": "ranimal",
+	"name": "randimal",
 	"version": "0.1.0",
 	"description": "A random named animal generator",
 	"main": "index.js",
@@ -9,7 +9,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/puregarlic/ranimal.git"
+		"url": "git+https://github.com/puregarlic/randimal.git"
 	},
 	"keywords": [
 		"random",
@@ -20,9 +20,9 @@
 	"author": "Graham Barber <grahammbarber@gmail.com>",
 	"license": "UNLICENSED",
 	"bugs": {
-		"url": "https://github.com/puregarlic/ranimal/issues"
+		"url": "https://github.com/puregarlic/randimal/issues"
 	},
-	"homepage": "https://github.com/puregarlic/ranimal#readme",
+	"homepage": "https://github.com/puregarlic/randimal#readme",
 	"devDependencies": {
 		"ava": "^3.8.2",
 		"esbuild": "^0.3.8",

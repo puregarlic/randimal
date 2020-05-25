@@ -1,10 +1,10 @@
-# ranimal
+# randimal
 
 A random animal name generator, forked from
 [`random-animal-name-generator`](https://github.com/adzialocha/random-animal-name-generator).
 
 ```js
-import { generateRandomName } from 'ranimal'
+import { generateRandomName } from 'randimal'
 
 // In some async context...
 const name = await generateRandomName()
