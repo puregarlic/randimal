@@ -1,6 +1,6 @@
 {
 	"name": "randimal",
-	"version": "0.1.0",
+	"version": "0.0.0",
 	"description": "A random named animal generator",
 	"main": "index.js",
 	"type": "module",
@@ -26,6 +26,7 @@
 	"devDependencies": {
 		"ava": "^3.8.2",
 		"esbuild": "^0.3.8",
-		"prettier": "^2.0.5"
+		"prettier": "^2.0.5",
+		"semantic-release": "^17.0.8"
 	}
 }
